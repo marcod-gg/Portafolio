@@ -1,20 +1,6 @@
 AOS.init();
 
-/* let ubicacionPrincipal = window.pageYOffset;
-
-window.addEventListener("scroll", function () {
-    let desplazamientoActual = window.pageYOffset;
-    if (ubicacionPrincipal >= desplazamientoActual) {
-        document.getElementsByTagName("nav")[0].style.top = "0px"
-    } else {
-        document.getElementsByTagName("nav")[0].style.top = "-100px"
-    }
-    ubicacionPrincipal = desplazamientoActual;
-})
- */
-/* Menu */
-
-let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
+let enlacesHeader = document.querySelectorAll(".links-header")[0];
 let semaforo = true;
 
 document.querySelectorAll(".hamburguer")[0].addEventListener("click", function () {
@@ -76,7 +62,7 @@ function scrollToTop (duration) {
   = cosParameter + cosParameter * (cos scrollCount * x)
 */
 
-const links = document.querySelectorAll(".enlaces-header a");
+const links = document.querySelectorAll(".links-header a");
  
 for (const link of links) {
   link.addEventListener("click", clickHandler);

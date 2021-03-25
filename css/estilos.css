@@ -79,12 +79,12 @@ nav {
     height: 100%;
 }
 
-.enlaces-header {
+.links-header {
     font-weight: 400;
     transition: ease-in-out 0.5s;
 }
 
-.enlaces-header a {
+.links-header a {
     color: #A1C4C4;
     text-decoration: none;
     margin-left: 30px;
@@ -93,7 +93,7 @@ nav {
     font-size: 26px;
 }
 
-.enlaces-header a:hover {
+.links-header a:hover {
     cursor: pointer;
     box-shadow: 0px 0px 15px 10px rgba(0, 120, 185, 0.712);
     transition: ease-in-out 0.5s;
@@ -128,7 +128,7 @@ nav {
     align-items: center;
 }
 
-.textos-header {
+.text-header {
     text-align: center;
     width: 55%;
 }
@@ -141,14 +141,14 @@ nav {
     width: 100%;
 }
 
-.textos-header p {
+.text-header p {
     font-weight: 500;
     font-size: 44px;
     margin-top: 14px;
     color: #A1C4C4;
 }
 
-.textos-header a {
+.text-header a {
     margin: 28px 0 0 0;
     display: inline-block;
     background: #24acf2;
@@ -160,7 +160,7 @@ nav {
     border-radius: 10px;
 }
 
-.textos-header a:hover {
+.text-header a:hover {
     box-shadow: 0 0 20px 10px rgba(0, 119, 185, .46);
     transition: ease-in-out .2s;
 }
@@ -241,18 +241,18 @@ nav {
 }
 
 /* Tercera sección */
-.questions {
+.seccion3 {
     height: 970px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.questions>img {
+.seccion3>img {
     width: 40%;
 }
 
-.textos-questions {
+.text-aboutme {
     width: 55%;
 }
 
@@ -281,7 +281,7 @@ nav {
     font-weight: 400;
 }
 
-.textos-questions p {
+.text-aboutme p {
     margin-top: 14px;
 }
 
@@ -407,11 +407,11 @@ nav {
     text-align: center;
 }
 
-.titulo-aptitudes {
+.text-aptitudes {
     height: 15%;
 }
 
-.caja-aptitudes {
+.box-aptitudes {
     width: 90%;
     height: 75%;
     display: flex;
@@ -565,15 +565,15 @@ footer {
         height: 710px;
     }
 
-    .enlaces-header a {
+    .links-header a {
         font-size: 20px;
     }
 
-    .textos-header p {
+    .text-header p {
         font-size: 36px;
     }
 
-    .textos-header a {
+    .text-header a {
         font-size: 30px;
     }
 
@@ -586,7 +586,7 @@ footer {
         font-size: 22px;
     }
 
-    .questions{
+    .seccion3{
         height: 710px;
     }
 
@@ -622,12 +622,12 @@ footer {
         margin-top: 125px;
     }
 
-    .enlaces-header a{
+    .links-header a{
         font-size: 18px;
     }
 
     .contenedor{
-        width: 1280px;
+        width: 70%;
     }
 
     nav{
@@ -666,7 +666,7 @@ footer {
         font-size: 20px;
     }
 
-    .questions{
+    .seccion3{
         height: 580px;
     }
 
@@ -682,10 +682,10 @@ footer {
 @media screen and (max-width: 1440px){
     /* 1440 * 900 (830) */
     .contenedor{
-        width: 1200px;
+        width: 80%;
     }
 
-    .textos-header a{
+    .text-header a{
         font-size: 28px;
         padding: 10px 60px 10px 60px;
     }
@@ -697,15 +697,13 @@ footer {
 
 @media screen and (max-width: 1366px){
     /* 1366 * 768 (700) */
-    .contenedor{
-        width: 1100px;
-    }
+
 
     header::before{
         margin-top: 100px;
     }
 
-    .enlaces-header a{
+    .links-header a{
         font-size: 16px;
     }
 
@@ -726,7 +724,7 @@ footer {
         padding-bottom: 30px;
     }
 
-    .questions{
+    .seccion3{
         height: 500px;
     }
 
@@ -757,12 +755,8 @@ footer {
         font-size: 30px;
     }
 
-    .enlaces-header a{
+    .links-header a{
         margin-left: 5px;
-    }
-
-    .contenedor{
-        width: 1000px;
     }
 
     nav{
@@ -786,14 +780,14 @@ footer {
 
     .contenedor-proyectos a{
         width: 40%;
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
 
     .desc-proyecto{
         height: auto;
     }
 
-    .questions{
+    .seccion3{
         height: 450px;
     }
 
@@ -821,11 +815,11 @@ footer {
         height: 450px;
     }
 
-    .textos-header p{
+    .text-header p{
         font-size: 26px;
     }
 
-    .textos-header a{
+    .text-header a{
         font-size: 22px;
     }
 
@@ -836,10 +830,6 @@ footer {
 
 @media screen and (max-width: 1024px){
     /* 1024 * 720 (650) */
-    .contenedor{
-        width: 750px;
-    }
-
     h1{
         font-size: 40px;
     }
@@ -857,11 +847,11 @@ footer {
         
     }
 
-    .textos-questions{
+    .text-aboutme{
         width: 65%
     }
 
-    .questions>img {
+    .seccion3>img {
         width: 30%;
     }
 
@@ -897,265 +887,164 @@ footer {
     .textos-habilidades p{
         margin-top: 20px;
     }
-
-    
-
 }
 
 /* Tablets */
 
 @media screen and (max-width: 768px){
+    /* 768 * 928 */
+
+    .contenedor{
+        width: 90%;
+    }
+
+    header::before {
+        margin-top: 70px;
+    }
+
+    .separador{
+        padding-bottom: 70px;
+    }
+
+    .links-header {
+        position: fixed;
+        background: #0F2027;
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0% at 100% 0);
+        
+    }
+
+    .nav .menudos {
+        -webkit-clip-path: circle(150.0% at 100% 0);
+        clip-path: circle(150.0% at 100% 0);
+    }
+
+    .nav .links-header a {
+        color: white;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .hamburguer {
+        display: block;
+        color: white;
+        margin-bottom: auto;
+    }
+
+    .seccion1 {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 788px;
+    }
+
+    .img-header{
+        height: 60%;
+        width: 60%;
+    }
+
+    .img-header img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .text-header{
+        height: 40%;
+        width: 100%;
+    }
+
+    .proyectos{
+        width: 100%;
+    }
+
+    .contenedor-proyectos{
+        width: 90%;
+    }
+
+    .seccion3{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 788px;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .seccion3 img{
+        height: 20%;
+        width: auto;
+    }
+
+    .text-aboutme{
+        height: 50%;
+    }
+
+    .seccion4{
+        height: 858px;
+        text-align: center;
+    }
+
+    .habilidades {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        width: 80%;
+        align-items: center;
+    }
     
+    .textos-habilidades{
+        width: 90%;
+    }
+
+    .barras{
+        width: 90%;
+    }
+
+    .link-habilidades{
+        display: flex;
+        flex-direction: unset;
+        margin: auto;
+        align-items: center;
+    }
+
+    .link-habilidades a{
+        width: 40%;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .seccion5{
+        height: 788px;
+    }
+
+    .text-aptitudes{
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .aptitud{
+        height: auto;
+        width: 100%;
+    }
+
 }
 
-@media screen and (max-width: 425px){
-
+@media screen and (max-width: 412px){
+    /* 412 * 662 */
 }
 
 @media screen and (max-width: 375px){
+    /* 375 * 680 */
+
 
 }
-
-@media screen and (max-width: 320px){
-
-}
-
-
-/* @media screen and (max-width: 800px) {
-    .titulo {
-        font-size: 45px;
-    }
-
-    .contenido-header {
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        height: 720px;
-    }
-
-    .contenido-header>img {
-        height: 30%;
-    }
-
-    .textos-header {
-        margin: 0;
-        height: 65%;
-    }
-
-    .enlaces-header {
-        position: fixed;
-        background: #0F2027;
-        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-        clip-path: circle(0% at 100% 0);
-    }
-
-    .nav .menudos {
-        -webkit-clip-path: circle(150.0% at 100% 0);
-        clip-path: circle(150.0% at 100% 0);
-    }
-
-    .nav .enlaces-header a {
-        color: white;
-        font-weight: 400;
-        font-size: 24px;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .hamburguer {
-        display: block;
-        color: white
-    }
-
-    .contenedor-articulo>a {
-        width: 80%;
-        text-decoration: none;
-    }
-
-    .questions {
-        height: 1200px;
-        justify-content: space-evenly;
-        flex-direction: column-reverse;
-        width: 90%;
-        display: flex;
-    }
-
-    .questions>img {
-        width: 70%;
-    }
-
-    .dato {
-        width: 30%;
-    }
-
-    .resp {
-        width: 65%;
-    }
-
-    .textos-questions {
-        width: 80%;
-    }
-
-    .conten-results {
-        flex-direction: column-reverse;
-    }
-
-    .results-text>a {
-        margin-bottom: 60px;
-    }
-
-    .numbers {
-        width: 100%;
-    }
-
-    .results-text {
-        width: 100%;
-    }
-
-    .services {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .box-skills {
-        margin: 0 0 40px 0;
-    }
-
-    .box-skills h4 {
-        width: 500px;
-    }
-
-    .services>img {
-        width: 400px;
-    }
-
-    footer {
-        justify-content: space-evenly;
-    }
-
-    .partFooter {
-        width: 45%;
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .titulo {
-        font-size: 35px;
-    }
-
-    h1 {
-        font-size: 35px;
-        font-weight: 800;
-    }
-
-    .typed {
-        font-size: 22px;
-    }
-
-    .contenido-header {
-        height: 500px;
-
-    }
-
-    .nav {
-        padding: 0 10px;
-    }
-
-    .contenido-header>img {
-        margin-top: 50px;
-        width: auto;
-    }
-
-    .textos-header {
-        width: auto;
-    }
-
-    .textos-header>p {
-        margin-top: 5px;
-        margin-bottom: 0px;
-    }
-
-    .enlaces-header {
-        position: fixed;
-        background: #0F2027;
-        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-        clip-path: circle(0% at 100% 0);
-    }
-
-    .nav .menudos {
-        -webkit-clip-path: circle(150.0% at 100% 0);
-        clip-path: circle(150.0% at 100% 0);
-    }
-
-    .nav .enlaces-header a {
-        color: white;
-        font-weight: 400;
-        font-size: 24px;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .hamburguer {
-        display: block;
-        color: white
-    }
-
-    .articulo {
-        width: 95%;
-    }
-
-    .questions>img {
-        width: 300px;
-    }
-
-    .numbers .number {
-        width: 95%;
-    }
-
-    .results-text h4 {
-        font-size: 35px;
-    }
-
-    .services>img {
-        width: 300px;
-    }
-
-    .box-skills h4 {
-        width: 300px;
-    }
-
-    .partFooter {
-        width: 95%;
-        margin-bottom: 40px;
-    }
-
-    .partFooter>img {
-        width: 35%;
-    }
-} */
-
-/* 2560 * 1440 (1370) (Listo)
-1920 * 1080 (1010) (Listo)
-1600 * 900 (830) (listo)
-1440 * 900 (830) (Listo)
-1366 * 768 (700) (Listo)
-1280 * 720 (650) (Listo)
-1024 * 720 (650)
- */
