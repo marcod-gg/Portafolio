@@ -46,7 +46,7 @@ h3 {
 header::before {
     content: "";
     display: block;
-    margin-bottom: 190px;
+    margin-top: 200px;
 }
 
 /* Menu de navegación */
@@ -122,7 +122,7 @@ nav {
 
 /* Primera sección */
 .seccion1 {
-    height: 680px;
+    height: 970px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,7 +169,7 @@ nav {
 .seccion2 {
     background: #090B10;
     box-shadow: 0px 0px 100px 10px #24acf2;
-    height: 800px;
+    height: auto;
 }
 
 .proyectos {
@@ -231,7 +231,7 @@ nav {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
-    height: 180px;
+    height: auto;
 }
 
 .tags {
@@ -242,7 +242,7 @@ nav {
 
 /* Tercera sección */
 .questions {
-    height: 680px;
+    height: 970px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -295,7 +295,7 @@ nav {
 .seccion4 {
     background: black;
     box-shadow: 0px 0px 100px 10px #24acf2;
-    height: 800px;
+    height: 970px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -329,7 +329,6 @@ nav {
     box-shadow: 0px 0px 10px 1px white;
     transition: ease-in-out .5s;
 }
-
 
 .habilidad {
     color: white;
@@ -399,7 +398,7 @@ nav {
 /* Quinta sección */
 
 .seccion5 {
-    height: 680px;
+    height: 970px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -408,7 +407,7 @@ nav {
     text-align: center;
 }
 
-.titlo-aptitudes {
+.titulo-aptitudes {
     height: 15%;
 }
 
@@ -526,14 +525,21 @@ footer {
     margin-bottom: 5px;
 }
 
-
 .partFooter img {
     width: 50%;
 }
 
 /* Breakpoint */
-
 @media screen and (max-width: 1920px) {
+    /* 1920 * 1080 (1010) */
+
+    header::before{
+        margin-top: 150px;
+    }
+
+    .separador{
+        padding-bottom: 150px;
+    }
 
     .contenedor {
         max-width: 1400px;
@@ -555,12 +561,8 @@ footer {
         height: 100px;
     }
 
-    .separador{
-        padding-bottom: 190px;
-    }
-
     .seccion1{
-        height: 600px;
+        height: 710px;
     }
 
     .enlaces-header a {
@@ -575,10 +577,6 @@ footer {
         font-size: 30px;
     }
 
-    .seccion2{
-        height: 720px;
-    }
-
     .proyectos{
         padding-top: 60px;
         padding-bottom: 60px;
@@ -589,11 +587,11 @@ footer {
     }
 
     .questions{
-        height: 600px;
+        height: 710px;
     }
 
     .seccion4{
-        height: 720px;
+        height: 710px;
     }
 
     .barras{
@@ -614,25 +612,14 @@ footer {
     }
 
     .seccion5{
-        height: 630px;
-    }
-}
-
-@media screen and (max-width: 1680px){
-    /* alto 1050 */
-    .separador{
-        padding-bottom: 175px;
-    }
-
-    .seccion1{
-        height: 685px;
+        height: 710px;
     }
 }
 
 @media screen and (max-width: 1600px){
-    /* alto 900 */
+    /* 1600 * 900 (830) */
     header::before{
-        margin-bottom: 150px;
+        margin-top: 125px;
     }
 
     .enlaces-header a{
@@ -648,16 +635,13 @@ footer {
     }
 
     .separador{
-        padding-bottom: 150px;
+        padding-bottom: 125px;
     }
 
     .seccion1{
-        height: 600px;
+        height: 580px;
     }
 
-    .seccion2{
-        height: 700px;
-    }
 
     .titulo{
         font-size: 40px;
@@ -682,17 +666,21 @@ footer {
         font-size: 20px;
     }
 
+    .questions{
+        height: 580px;
+    }
+
     .seccion4{
-        height: 700px
+        height: 580px
     }
 
     .seccion5{
-        height: 600px;
+        height: 580px;
     }
 }
 
 @media screen and (max-width: 1440px){
-    /* alto 900 */
+    /* 1440 * 900 (830) */
     .contenedor{
         width: 1200px;
     }
@@ -708,13 +696,13 @@ footer {
 }
 
 @media screen and (max-width: 1366px){
-    /* alto 768 */
+    /* 1366 * 768 (700) */
     .contenedor{
-        width: 1020px;
+        width: 1100px;
     }
 
     header::before{
-        margin-bottom: 100px;
+        margin-top: 100px;
     }
 
     .enlaces-header a{
@@ -730,11 +718,7 @@ footer {
     }
 
     .seccion1 {
-        height: 568px;
-    }
-
-    .seccion2{
-        height: 648px;
+        height: 500px;
     }
 
     .proyectos{
@@ -743,7 +727,7 @@ footer {
     }
 
     .questions{
-        height: 568px;
+        height: 500px;
     }
 
     .link-habilidades a{
@@ -751,22 +735,109 @@ footer {
     }
 
     .seccion4{
-        height: 648px;
+        height: 500px;
     }
 
     .seccion5{
-        height: 568px;
+        height: 500px;
     }
 }
 
-@media screen and (max-width: 1024px){
-    /* alto 768 */
-    .contenedor{
-        width: 790px;
+@media screen and (max-width: 1280px){
+    /* 1280 * 720 (650) */
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 30px;
     }
 
     .enlaces-header a{
         margin-left: 5px;
+    }
+
+    .contenedor{
+        width: 1000px;
+    }
+
+    nav{
+        height: 70px;
+    }
+
+    .seccion1{
+        height: 450px;
+    }
+
+    .proyectos{
+        height: auto;
+    }
+
+    .contenedor-proyectos{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .contenedor-proyectos a{
+        width: 40%;
+        padding-bottom: 40px;
+    }
+
+    .desc-proyecto{
+        height: auto;
+    }
+
+    .questions{
+        height: 450px;
+    }
+
+    .seccion4{
+        height: 450px;
+    }
+
+    .descSobreMi{
+        font-size: 20px;
+    }
+
+    .dato{
+        width: 30%;
+    }
+
+    .resp{
+        width: 68%;
+    }
+
+    .seccion4{
+        height: 450px;
+    }
+
+    .seccion5{
+        height: 450px;
+    }
+
+    .textos-header p{
+        font-size: 26px;
+    }
+
+    .textos-header a{
+        font-size: 22px;
+    }
+
+    .nav{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    /* 1024 * 720 (650) */
+    .contenedor{
+        width: 750px;
     }
 
     h1{
@@ -781,39 +852,57 @@ footer {
         font-size: 28px;
     }
 
-    .textos-header p{
-        font-size: 26px;
+    .contenedor-proyectos a{
+        width: 60%;
+        
     }
 
-    .textos-header a{
-        font-size: 22px;
+    .textos-questions{
+        width: 65%
     }
 
-    .seccion2{
+    .questions>img {
+        width: 30%;
+    }
+
+    .puntSobreMi{
+        font-size: 18px;
+    }
+
+    .habilidad{
+        font-size: 20px;
         height: auto;
     }
 
-    .proyectos{
+    .barra{
         height: auto;
     }
 
-    .contenedor-proyectos{
+    .textos-habilidades p{
+        font-size: 18px;
+    }
+
+    .link-habilidades{
         display: flex;
         flex-direction: column;
         margin: auto;
         align-items: center;
-
     }
 
-    .contenedor-proyectos a{
-        width: 70%;
-        padding-bottom: 40px;
+    .link-habilidades a{
+        width: 60%;
+        font-size: 16px;
     }
+
+    .textos-habilidades p{
+        margin-top: 20px;
+    }
+
+    
+
 }
 
-@media screen and (max-width: 800px){
-    /* alto 600 */
-}
+/* Tablets */
 
 @media screen and (max-width: 768px){
     
@@ -1061,3 +1150,12 @@ footer {
         width: 35%;
     }
 } */
+
+/* 2560 * 1440 (1370) (Listo)
+1920 * 1080 (1010) (Listo)
+1600 * 900 (830) (listo)
+1440 * 900 (830) (Listo)
+1366 * 768 (700) (Listo)
+1280 * 720 (650) (Listo)
+1024 * 720 (650)
+ */
