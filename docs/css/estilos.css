@@ -964,11 +964,19 @@ footer {
     }
 
     .proyectos{
-        width: 100%;
+        width: 90%;        
     }
 
     .contenedor-proyectos{
-        width: 90%;
+        width: auto;
+    }
+
+    .contenedor-proyectos a{
+        width: auto;
+    }
+
+    .proyecto{
+        width: auto;
     }
 
     .seccion3{
@@ -982,45 +990,50 @@ footer {
     }
 
     .seccion3 img{
-        height: 20%;
+        height: 25%;
         width: auto;
     }
 
     .text-aboutme{
-        height: 50%;
+        width: auto;
     }
 
     .seccion4{
-        height: 858px;
+        height: auto;
         text-align: center;
+        width: auto;
     }
+
+    
 
     .habilidades {
         flex-direction: column-reverse;
         justify-content: space-evenly;
         width: 80%;
         align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     
     .textos-habilidades{
-        width: 90%;
+        width: auto;
     }
 
     .barras{
-        width: 90%;
+        width: auto;
     }
 
     .link-habilidades{
         display: flex;
-        flex-direction: unset;
+        flex-direction: column;
         margin: auto;
         align-items: center;
+        margin-bottom: 30px;
     }
 
     .link-habilidades a{
-        width: 40%;
-        font-size: 16px;
-        margin-bottom: 30px;
+        width: 70%;
+        font-size: 20px;
     }
 
     .seccion5{
@@ -1037,10 +1050,62 @@ footer {
         width: 100%;
     }
 
+    footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        height: 500px;
+        text-align: center;
+    }
+
+    .partFooter{
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .partFooter img{
+        width: 50%;
+    }
+
+    .descSobreMi{
+        text-align: center;
+    }
+
+    .dato{
+        text-align: end;
+        width: 35%;
+    }
+
+    .resp{
+        width: 63%;
+    }
 }
+
+@media screen and (max-width: 575px){
+    .descSobreMi{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .barra{
+        width: 80%;
+    }
+}
+
+
 
 @media screen and (max-width: 412px){
     /* 412 * 662 */
+
+    .seccion1{
+        height: 522px;
+    }
+
+    .img-header{
+        height: 45%;
+    }
 }
 
 @media screen and (max-width: 375px){
