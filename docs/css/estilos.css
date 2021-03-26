@@ -1099,17 +1099,29 @@ footer {
 @media screen and (max-width: 412px){
     /* 412 * 662 */
 
+
+
     .seccion1{
         height: 522px;
+    }
+
+    .seccion1 h1{
+        font-size: 30px;
+    }
+
+    .seccion1 h2{
+        font-size: 22px;
+    }
+
+    .seccion1 p{
+        font-size: 20px;
+    }
+
+    .seccion1 a{
+        font-size: 20px;
     }
 
     .img-header{
         height: 45%;
     }
-}
-
-@media screen and (max-width: 375px){
-    /* 375 * 680 */
-
-
 }
